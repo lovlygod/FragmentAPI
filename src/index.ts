@@ -6,7 +6,6 @@ async function topupTonExample(): Promise<void> {
  console.log("Starting TON topup example");
 
   const tonClient = new FragmentTon();
-  // @lovly - target username, 5 - TON amount (integer 1-1000000 (one billion))
   const result = await tonClient.topupTon("@lovly", 5);
 
   if (result.success) {
@@ -22,7 +21,6 @@ async function buyPremiumExample(): Promise<void> {
   console.log("Starting Premium purchase example");
 
   const premiumClient = new FragmentPremium();
-  // @lovly - target username, 6 - months duration (3, 6, or 12 only)
   const result = await premiumClient.buyPremium("@lovly", 6);
 
   if (result.success) {
@@ -38,7 +36,6 @@ async function buyStarsExample(): Promise<void> {
   console.log("Starting Stars purchase example");
 
   const starsClient = new FragmentStars();
-  // @lovly - target username, 50 - stars amount (integer 50-1000000 (one million))
   const result = await starsClient.buyStars("@lovly", 50);
 
   if (result.success) {

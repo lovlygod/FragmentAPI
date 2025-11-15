@@ -61,11 +61,9 @@ export class FragmentTon {
 
     const account = await this._getAccountInfo();
 
-    // Update ads topup state
     const updateData = `mode=new&method=updateAdsTopupState`;
     await this._makeRequest(updateData);
 
-    // Search for recipient
     const searchData = `query=${encodeURIComponent(username)}&method=searchAdsTopupRecipient`;
     const searchResp = await this._makeRequest(searchData);
     const searchResult = JSON.parse(searchResp);
@@ -75,7 +73,6 @@ export class FragmentTon {
       return { success: false, error: "User not found" };
     }
 
-    // Initialize ads topup request
     const initData = `recipient=${recipient}&amount=${amount}&method=initAdsTopupRequest`;
     const initResp = await this._makeRequest(initData);
     const initResult = JSON.parse(initResp);

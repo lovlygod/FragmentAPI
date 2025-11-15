@@ -61,7 +61,6 @@ export class FragmentStars {
 
     const account = await this._getAccountInfo();
 
-    // Search for recipient
     const searchData = `query=${encodeURIComponent(username)}&quantity=&method=searchStarsRecipient`;
     const searchResp = await this._makeRequest(searchData);
     const searchResult = JSON.parse(searchResp);
@@ -71,7 +70,6 @@ export class FragmentStars {
       return { success: false, error: "User not found" };
     }
 
-    // Initialize buy stars request
     const initData = `recipient=${recipient}&quantity=${amount}&method=initBuyStarsRequest`;
     const initResp = await this._makeRequest(initData);
     const initResult = JSON.parse(initResp);

@@ -34,16 +34,13 @@ export class FragmentPremium {
   }
 
   private _cleanDecode(s: string): string {
-    // Base64 decode implementation
     const base64Cleaned = s.replace(/[^A-Za-z0-9+/=]/g, '') + '='.repeat((-s.length % 4));
     const b = Buffer.from(base64Cleaned, 'base64');
     
-    // Find the string starting with "Telegram Premium"
     const text = b.toString('utf-8');
     const premiumIndex = text.indexOf("Telegram Premium");
     const t = premiumIndex !== -1 ? text.substring(premiumIndex) : text;
     
-    // Remove non-printable characters
     return t.replace(/[^\x20-\x7E\n\r\t]/g, '').trim();
   }
 
@@ -69,7 +66,6 @@ export class FragmentPremium {
 
     const httpClient = http;
     
-    // Search for recipient
     const searchData = `query=${encodeURIComponent(username)}&months=${months}&method=searchPremiumGiftRecipient`;
     const searchResp = await this._makeRequest(searchData);
     const searchResult = JSON.parse(searchResp);
@@ -79,11 +75,9 @@ export class FragmentPremium {
       return { success: false, error: "User not found" };
     }
 
-    // Update premium state
     const updateData = `mode=new&lv=false&dh=${Math.floor(Date.now() / 1000)}&method=updatePremiumState`;
     await this._makeRequest(updateData);
 
-    // Initialize gift premium request
     const initData = `recipient=${recipient}&months=${months}&method=initGiftPremiumRequest`;
     const initResp = await this._makeRequest(initData);
     const initResult = JSON.parse(initResp);

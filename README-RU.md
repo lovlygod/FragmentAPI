@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="../fragment.svg" alt="Fragment Logo" width="120" height="120" style="border-radius: 24px;">
+  <img src="fragment.svg" alt="Fragment Logo" width="120" height="120" style="border-radius: 24px;">
 
   <h1 style="margin-top: 24px;">💎 Fragment API от @lovlydev</h1>
 
