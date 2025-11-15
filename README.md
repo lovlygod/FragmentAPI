@@ -17,7 +17,7 @@
 
 - 💰 **TON Advertisement Topups** - Send TON for advertising campaigns and purchasing gifts (1-1,000,000 TON)
 - 👑 **Telegram Premium Gifts** - Purchase Premium subscriptions (3, 6, or 12 months)
-- ⭐ **Telegram Stars Purchases** - Buy Stars for users (50-1,000 Stars)
+- ⭐ **Telegram Stars Purchases** - Buy Stars for users (50-1,000,000 Stars)
 
 ## 🚀 Quick Start
 
