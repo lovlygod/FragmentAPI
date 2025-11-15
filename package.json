@@ -1,0 +1,30 @@
+{
+  "name": "fragmentapi",
+  "version": "1.0.0",
+  "description": "Fragment API by @lovlyswag - JavaScript/TypeScript version",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "fragment",
+    "telegram",
+    "premium",
+    "stars",
+    "ton",
+    "api"
+  ],
+  "author": "Artem (lovly)",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "tonutils": "^0.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
