@@ -192,8 +192,7 @@ const result = await starsClient.buyStars("@username", 100); // 100 stars
 - npm
 
 ## Лицензия
-
-MIT
+[MIT](LICENSE)
 
 <div align="center">
 

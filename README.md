@@ -192,7 +192,7 @@ const result = await starsClient.buyStars("@username", 100); // 100 stars
 - npm
 
 ## License
-[MIT](https://github.com/lovlygod/FragmentAPI/LICENSE)
+[MIT](LICENSE)
 
 <div align="center">
 
