@@ -74,8 +74,8 @@ FragmentAPI is built with developers for developers.
 Contributions, bug reports, and ideas are always welcome:
 Open an issue
 Submit a pull request
-Share ideas on Telegram @lovlyswag
+Share ideas on Telegram [@lovlyswag](https://t.me/lovlyswag)
 
 ## 📊 Stats
 <p align="center"> <img src="https://img.shields.io/badge/stable-v1.0-brightgreen" /> <img src="https://img.shields.io/badge/python-3.10+-blue" /> </p>
-<p align="center"> <sub>FragmentAPI — modular, scalable, async-ready API builder. Built with ❤️ by Lovlygod</sub> </p> ```
+<p align="center"> <sub>FragmentAPI — modular, scalable, async-ready API builder. Built with ❤️ by Lovlygod</sub> </p>
